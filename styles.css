@@ -1,0 +1,7 @@
+/* container for grids */
+.grid-square {
+    height: 16px;
+    width: 16px;
+    border: solid;
+    border-color: aqua;
+}

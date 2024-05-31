@@ -1,7 +1,21 @@
-/* container for grids */
-.grid-square {
-    height: 16px;
-    width: 16px;
+/* container for gr*/
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
     border: solid;
-    border-color: aqua;
+    border-color: antiquewhite;
+    height: 40px;
+    width: 40px;
 }

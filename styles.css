@@ -14,8 +14,12 @@ body {
 }
 
 .col {
-    border: solid;
-    border-color: antiquewhite;
+    border: 1px solid gray;
     height: 40px;
     width: 40px;
+    margin: 0;
+}
+
+.row .col:hover{
+    background-color: black;
 }

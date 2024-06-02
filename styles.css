@@ -19,7 +19,3 @@ body {
     width: 40px;
     margin: 0;
 }
-
-.row .col:hover{
-    background-color: black;
-}

@@ -12,9 +12,17 @@ function createDiv(num){
         const getRows = Array.from(rowList);
         getRows.forEach(row => {
             const colDiv = document.createElement("div");
-            colDiv.className = "col";
+            colDiv.classList = "col";
             row.appendChild(colDiv);
         });
     }   
 }
 createDiv(16);
+
+const colDivs = document.querySelectorAll(".col");
+colDivs.forEach(col => {
+    col.addEventListener("mouseover", () => {
+        col.style.backgroundColor = "black";
+    });
+});
+

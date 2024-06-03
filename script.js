@@ -30,6 +30,13 @@ const sizeBtn = document.querySelector(".size");
     })
     createGrid(size);
     }
+
+    const colDivs = document.querySelectorAll(".col");
+    colDivs.forEach(col => {
+    col.addEventListener("mouseover", () => {
+        col.style.backgroundColor = "black";
+    });
+});
 });  
 
 
@@ -40,6 +47,3 @@ colDivs.forEach(col => {
         col.style.backgroundColor = "black";
     });
 });
-
-
-

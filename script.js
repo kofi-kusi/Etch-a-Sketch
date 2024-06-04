@@ -1,6 +1,16 @@
-// Creating the grid squares inside the container div
 const gridContainer = document.querySelector(".container");
 
+// create hover effect on mouseover col divs
+function hoverEffect(){
+    const colDivs = document.querySelectorAll(".col");
+    colDivs.forEach(col => {
+    col.addEventListener("mouseover", () => {
+        col.style.backgroundColor = "black";
+    });
+});
+}
+
+// Creating the grid squares inside the container div
 function createGrid(num=16){
     for (let i=1; i <= num; i++){
         const rowDiv = document.createElement("div");
@@ -31,19 +41,27 @@ const sizeBtn = document.querySelector(".size");
     createGrid(size);
     }
 
-    const colDivs = document.querySelectorAll(".col");
-    colDivs.forEach(col => {
-    col.addEventListener("mouseover", () => {
-        col.style.backgroundColor = "black";
-    });
-});
+    hoverEffect();
 });  
 
 
+hoverEffect();
 
-const colDivs = document.querySelectorAll(".col");
-colDivs.forEach(col => {
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  };
+  const colorBtn = document.querySelector(".rainbow");
+
+  colorBtn.addEventListener("click", function(){
+    const colDivs = document.querySelectorAll(".col");
+    colDivs.forEach(col => {
     col.addEventListener("mouseover", () => {
-        col.style.backgroundColor = "black";
+        col.style.backgroundColor = getRandomColor();
     });
+  })
 });

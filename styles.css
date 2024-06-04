@@ -2,6 +2,7 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .header {
@@ -13,7 +14,14 @@ h1{
 }
 
 .footer {
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(141, 141, 158);
+    padding: 50px;
+}
+.footer a {
+    text-decoration: none;
 }
 
 .container {
@@ -21,6 +29,7 @@ h1{
     flex-direction: column;
     height: 600px;
     width: 600px;
+    margin: 20px;
 }
 
 .row {
@@ -44,4 +53,9 @@ h1{
 
 div .size{
     text-align: center;
+}
+
+.rainbow {
+    text-align: center;
+    margin: 30px;
 }
